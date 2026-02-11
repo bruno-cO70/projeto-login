@@ -16,12 +16,12 @@ rosa: #FC8DCA
 
 body, html{
     background-color: #88A3E2;
-    height: 100vw;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 }
 main{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     position: relative;
 }
 section#login{
@@ -35,6 +35,8 @@ section#login{
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.595);
+    transition: width 0.4s, height 0.4s;
+    transition-timing-function: ease;
 }
 section#login > div#imagem{
     display: block;
