@@ -23,12 +23,12 @@ body, html{
 main{
     height: 100vh;
     width: 100vw;
-    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 section#login{
-    position: absolute;
-    top: 50%;
-    left: 50%;
     overflow: hidden;
     background-color: white;
     width: 250px;
@@ -37,7 +37,6 @@ section#login{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.595);
     transition: width 0.4s, height 0.4s;
     transition-timing-function: ease;
-    transform: translate(-50%, -50%);
 }
 section#login > div#imagem{
     display: block;
